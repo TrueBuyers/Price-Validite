@@ -15,7 +15,6 @@ function generateDetails() {
     var renovations = document.getElementById('renovations').value;
     var damage = document.getElementById('damage').value;
     var sellingReason = document.getElementById('selling_reason').value;
-    var mortgages = document.getElementById('mortgages').value;
     var isRented = document.getElementById('is_rented').checked ? 'Yes' : 'No';
     var askingPrice = document.getElementById('asking_price').value;
     var propertyRating = document.getElementById('property_rating').value;
@@ -35,6 +34,8 @@ function generateDetails() {
     var redfinValue = document.getElementById('redfin_value').value;
     var redfinLink = document.getElementById('redfin_link').value;
     var caller = document.getElementById('caller').value;
+    var mortgages = document.getElementById('mortgages').value;
+
 
     var formattedMessage = `
     Name: ${name}
@@ -83,7 +84,6 @@ function generateDetailsForWebhook() {
     var renovations = document.getElementById('renovations').value;
     var damage = document.getElementById('damage').value;
     var sellingReason = document.getElementById('selling_reason').value;
-    var mortgages = document.getElementById('mortgages').value;
     var isRented = document.getElementById('is_rented').checked ? 'Yes' : 'No';
     var askingPrice = document.getElementById('asking_price').value;
     var propertyRating = document.getElementById('property_rating').value;
@@ -103,6 +103,8 @@ function generateDetailsForWebhook() {
     var redfinValue = document.getElementById('redfin_value').value;
     var redfinLink = document.getElementById('redfin_link').value;
     var caller = document.getElementById('caller').value;
+    var mortgages = document.getElementById('mortgages').value;
+
 
     var formattedMessage = `
     Name: ${name}
