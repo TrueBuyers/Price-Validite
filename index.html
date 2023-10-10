@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="https://trubuyers.com/wp-content/uploads/2021/04/TruBuyers-fevicon-Logo.png" type="image/png" sizes="32x32">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
@@ -21,8 +20,6 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
-        }
-     
         }
         .form-container input[type="text"],
         .form-container input[type="number"],
@@ -48,6 +45,7 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 18px;
+            margin-right: 20px;
         }
         .form-container button:hover {
             background-color: #45a049;
@@ -65,8 +63,8 @@
             <label for="number">Phone Number:</label>
             <input type="tel" id="number" name="number" required><br>
 
-            <label for="adress">Adress:</label>
-            <input type="text" id="adress" name="adress" required><br>
+            <label for="property_type">Property Type:</label>
+            <input type="text" id="property_type" name="property_type" required><br>
 
             <label for="bedrooms">Number of Bedrooms:</label>
             <input type="number" id="bedrooms" name="bedrooms" required><br>
@@ -87,6 +85,7 @@
             <textarea id="selling_reason" name="selling_reason"></textarea><br>
 
 
+
             <label for="asking_price">Asking Price:</label>
             <input type="number" id="asking_price" name="asking_price"><br>
 
@@ -96,8 +95,6 @@
             <label for="zestimate">Zestimate:</label>
             <input type="number" id="zestimate" name="zestimate"><br>
 
-
-
             <label for="garage_cars">Number of Garage Cars:</label>
             <input type="number" id="garage_cars" name="garage_cars"><br>
 
@@ -106,9 +103,7 @@
                 <option value="monthly">Monthly</option>
                 <option value="annually">Annually</option>
                 <option value="None">None</option>
-
             </select><br>
-
 
             <label for="size">Property Size (in sq. ft.):</label>
             <input type="number" id="size" name="size"><br>
@@ -139,7 +134,7 @@
 
             <label for="caller">Caller:</label>
             <input type="text" id="caller" name="caller"><br>
-            
+
             <label for="mortgages">Additional notes:</label>
             <textarea id="mortgages" name="mortgages"></textarea><br>
 
@@ -161,9 +156,8 @@
             <button type="button" id="generateButton">Test</button>
             <button type="button" id="generateButtonForWebhook">Submit</button>
 
+            <div id="output"></div>
         </form>
-
-        <div id="output"></div>
     </div>
 </body>
 </html>
