@@ -10,7 +10,7 @@ function generateDetails() {
 
     var number = document.getElementById('number').value;
 
-    var Adress = document.getElementById('property_type').value;
+    var propertyType = document.getElementById('property_type').value;
 
     var bedrooms = document.getElementById('bedrooms').value;
 
@@ -70,7 +70,7 @@ function generateDetails() {
 
     Phone Number: ${number}
 
-    Adress ${Adress}
+    Property Type: ${propertyType}
 
     Bedrooms: ${bedrooms}
 
@@ -135,7 +135,7 @@ function generateDetailsForWebhook() {
 
     var number = document.getElementById('number').value;
 
-    var Adress = document.getElementById('property_type').value;
+    var propertyType = document.getElementById('property_type').value;
 
     var bedrooms = document.getElementById('bedrooms').value;
 
@@ -195,7 +195,7 @@ function generateDetailsForWebhook() {
 
     Phone Number: ${number}
 
-    Adress ${Adress}
+    Property Type: ${propertyType}
 
     Bedrooms: ${bedrooms}
 
