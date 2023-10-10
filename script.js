@@ -46,7 +46,6 @@ function generateDetails() {
     Recent Renovations or Upgrades: ${renovations}
     Damage that Needs Repair: ${damage}
     Reason for Selling: ${sellingReason}
-    Existing Mortgages or Liens: ${mortgages}
     Is the Property Rented? ${isRented}
     Asking Price: ${askingPrice}
     Property Rating: ${propertyRating}
@@ -66,6 +65,8 @@ function generateDetails() {
     Redfin Value: ${redfinValue}
     Redfin Link: ${redfinLink}
     Caller: ${caller}
+    Additional notes: ${mortgages}
+
     `;
 
     var webhookUrl = document.getElementById('webhook').value;
@@ -113,7 +114,6 @@ function generateDetailsForWebhook() {
     Recent Renovations or Upgrades: ${renovations}
     Damage that Needs Repair: ${damage}
     Reason for Selling: ${sellingReason}
-    Existing Mortgages or Liens: ${mortgages}
     Is the Property Rented? ${isRented}
     Asking Price: ${askingPrice}
     Property Rating: ${propertyRating}
@@ -133,6 +133,8 @@ function generateDetailsForWebhook() {
     Redfin Value: ${redfinValue}
     Redfin Link: ${redfinLink}
     Caller: ${caller}
+    Additional notes: ${mortgages}
+
     `;
 
     var webhookUrl = 'https://discord.com/api/webhooks/1161080803887951943/jbH6VWTJjROTsRIW-8nWR0mSyGORlKbiCliCrmM01mHS3k5Y4gD1fQbE4lNkRoPsJQe-';
