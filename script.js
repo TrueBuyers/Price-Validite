@@ -70,7 +70,7 @@ function generateDetails() {
 
     Phone Number: ${number}
 
-    Adress: ${propertyType}
+    Address: ${propertyType}
 
     Bedrooms: ${bedrooms}
 
@@ -195,7 +195,7 @@ function generateDetailsForWebhook() {
 
     Phone Number: ${number}
 
-    Adress: ${propertyType}
+    Address: ${propertyType}
 
     Bedrooms: ${bedrooms}
 
