@@ -5,7 +5,7 @@
     <link rel="icon" href="https://trubuyers.com/wp-content/uploads/2021/04/TruBuyers-fevicon-Logo.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Script</title>
+    <title>TruBuyers Cold Calling Script</title>
     <style>
         body {
             background-image: url('https://i.ibb.co/FH4Fz40/Untitled-1.png');
@@ -20,6 +20,8 @@
             justify-content: center;
             align-items: center;
 }
+
+
 
         .script-container {
             background-color: rgba(213, 213, 213, 0.9);
@@ -74,14 +76,16 @@
         }
         
         .no-answer {
-            color: red; /* Red color for "If NO:" */
+            color: #EC6161; /* Red color for "If NO:" */
         }
         
         .yes-answer {
             color: #33974B; /* Green color for "If YES:" */
         }
         
-        
+        .name, .company-name, .property-address {
+            color: #33974B;
+        }
         
     </style>
 </head>
@@ -93,9 +97,11 @@
             <div class="opener">
                 <p><strong>Opener:</strong></p>
                 <p><strong>Hi HOMEOWNER?,</strong></p>
-                <p><strong>My name's [Your Name], I work with a local home buyer and I was reaching out about your property at PROPERTY ADDRESS.</strong>
-                    <strong>We work with a group of buyers in the (NAME OF CITY) area that are actively looking to buy some homes. Have
-                    you ever considered selling your home or would you be open to selling?</strong></p>
+                <p><strong>My name's <span class="name">[Your Name]</span>, I Work with a local home buyer and am reaching out about your property at <span class="property-address">PROPERTY ADDRESS</span>.</strong></p>
+
+                <p><strong>We work with a group of buyers in the <span class="name">(NAME OF CITY)</span>,  that are actively looking to buy some homes. Have you ever considered selling your home or would you be open to selling? </strong></p>
+
+                    
 <p><span class="no-answer">If NO:</span> Alright, Do you happen to have other property you would like to sell?</p>
                 <p><span class="yes-answer">If YES:</span> Great! May I ask you a few questions about the condition? I will take only 2 mins of your time.</p>
             </div>
