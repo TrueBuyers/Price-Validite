@@ -82,7 +82,6 @@ function generateDetails() {
 
     Damage that Needs Repair: ${damage}
 
-    Reason for Selling: ${sellingReason}
 
     Is the Property Rented? ${isRented}
 
@@ -123,6 +122,8 @@ function generateDetails() {
     Caller: ${caller}
 
     Additional notes: ${mortgages}
+
+    Tier ${sellingReason}
 
     `;
 
@@ -207,7 +208,6 @@ function generateDetailsForWebhook() {
 
     Damage that Needs Repair: ${damage}
 
-    Reason for Selling: ${sellingReason}
 
     Is the Property Rented? ${isRented}
 
@@ -248,6 +248,8 @@ function generateDetailsForWebhook() {
     Caller: ${caller}
 
     Additional notes: ${mortgages}
+
+    Tier: ${sellingReason}
 
 
     `;
