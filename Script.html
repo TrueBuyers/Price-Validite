@@ -2,11 +2,9 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="https://trubuyers.com/wp-content/uploads/2021/04/TruBuyers-fevicon-Logo.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Script</title>
-
+    <title>TruBuyers Cold Calling Script</title>
     <style>
         body {
             background-image: url('https://i.ibb.co/FH4Fz40/Untitled-1.png');
@@ -20,7 +18,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
+}
 
         .script-container {
             background-color: rgba(213, 213, 213, 0.9);
@@ -56,10 +54,13 @@
             margin-bottom: 20px;
             color: #EC6161; /* Green for questions */
         }
+        
+        .questions-list li:nth-child(11) span {
+            color: #33974B; /* Color for question 12 span */
+        }
 
         .rebuttals-list li {
             margin-bottom: 20px;
-            color: #33974B; /* Orange for "-" */
             list-style-type: disc;
         }
 
@@ -70,6 +71,15 @@
         .rebuttals-list li span {
             color: #33974B; /* Blue for rebuttal answers */
         }
+        
+        .no-answer {
+            color: red; /* Red color for "If NO:" */
+        }
+        
+        .yes-answer {
+            color: #33974B; /* Green color for "If YES:" */
+        }
+        
         
         
     </style>
@@ -85,8 +95,8 @@
                 <p><strong>My name's [Your Name], I'm calling from [Your Company] reaching out about your property at PROPERTY ADDRESS.</strong>
                     <strong>We work with a group of buyers in the (NAME OF CITY) area that are actively looking to buy some homes. Have
                     you ever considered selling your home or would you be open to selling?</strong></p>
-                <p><strong>If NO:</strong> Alright, Do you happen to have other property you would like to sell?</p>
-                <p><strong>If YES:</strong> Great! May I ask you a few questions about the condition? I will take only 2 mins of your time.</p>
+<p><span class="no-answer">If NO:</span> Alright, Do you happen to have other property you would like to sell?</p>
+                <p><span class="yes-answer">If YES:</span> Great! May I ask you a few questions about the condition? I will take only 2 mins of your time.</p>
             </div>
 
             <div class="questions">
@@ -102,15 +112,15 @@
                     <li><strong>7 - If Annual when will it expire?</strong></li>
                     <li><strong>8 - Is there a specific reason for selling this property right now?</strong></li>
                     <li><strong>9 - If the numbers make sense with the offer, what time frame could you close?</strong></li>
-                    <li><strong>10 - On a scale from 1-10, with 10 being you would sell today, how would you rate on this?</strong></li>
-                     <li><strong>11 - What's the best time we can call you back with the offer?
+                    <li><strong>10 - On a scale from 1-10, with 10 being you would sell today, how would you rate on this?</strong>
+                    <li><strong>11 - is there a dollar amount you have in mind that you would like to get if you sell the home?</strong>
+                <span>If The Asking Price more than Zestimate let them know we buy AS-IS AND WE PAY ALL CLOSING COST</span>
+            </li>
+            
+             <li><strong>12 - What's the best time we can call you back with the offer?
 </strong></li>
-                    <li><strong>12 - is there a dollar amount you have in mind that you would like to get if you sell the home?</strong></li>
-                </ul>
-            </div>
-
+           
             <div class="closing">
-            <p><strong>If The Asking Price more than Zestimate let them know we buy AS-IS AND WE PAY ALL CLOSING COST)</strong></p>
             
                 <p><strong>Thank you for your time and information. The next step is to match your property with the best buyer in the (NAME OF CITY) area to see if your property qualifies for an AS-IS offer.</strong></p>
                
