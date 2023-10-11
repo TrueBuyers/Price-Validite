@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome TruBuyers</title> <!-- Browser title -->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('https://i.ibb.co/FH4Fz40/Untitled-1.png') no-repeat center center fixed; 
+            background-size: cover; /* This will make sure your background image covers the whole screen */
+        }
+
+        .title {
+            border-radius: 10px;        
+            background-color: #042e5e; /* Background color with opacity */        
+            border: 20px solid #042e5e;
+            font-family: 'Fantasy', sans-serif; /* Use 'Fantasy' font */
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: white;
+            opacity: 0; /* Set initial opacity to 0 */
+            animation: fadeInAndFall 0.6s ease-out forwards, shakeUpDown 0.6s ease-out 0.6s; /* Apply fade-in and up-down shaking animations */
+            text-transform: uppercase; /* Convert text to uppercase */
+        }
+
+        @keyframes fadeInAndFall {
+            from {
+                opacity: 0;
+                transform: translateY(-1000%);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes shakeUpDown {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            25% {
+                transform: translateY(-5px);
+            }
+            75% {
+                transform: translateY(5px);
+            }
+        }
+
+        .button-container {
+            border: 2px solid #042e5e;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: rgba(240, 243, 250, 0.384); /* Background color with opacity */
+            opacity: 0; /* Set initial opacity to 0 */
+            animation: fadeInAndFall 0.6s ease-out forwards, shakeUpDown 0.6s ease-out 0.6s; /* Apply fade-in and up-down shaking animations */
+            text-transform: uppercase; /* Convert text to uppercase */ 
+        }
+
+        button {
+            background-color: #042e5e; /* Change this to the desired button color */
+            color: white;
+            padding: 14px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Change this to the desired button color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">  W e l c o m e - T r u B u y e r s</h1> <!-- Page title -->
+    <div class="button-container">
+        <button onclick="window.location.href='TruebuyersForm.html'">Lead Form</button>
+        <button onclick="window.location.href='file:///C:/Users/10/Downloads/Cold_Calling_Script_2.pdf'">Script</button>
+        <button onclick="window.open('https://evolutioncs.readymode.com/login_new/?then=/', '_blank')">Dialer</button>
+
+    </div>
+</body>
+</html>
