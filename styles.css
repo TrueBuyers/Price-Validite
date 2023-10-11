@@ -6,6 +6,30 @@ body {
     background-position: center;
 }
 
+#lease_expire {
+    background-color: #f2f2f2; /* Light grey background color */
+    color: #333; /* Dark text color */
+    border: 1px solid #ccc; /* Grey border */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+#lease_expire::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+}
+
+#call_back_time {
+    background-color: #f2f2f2; /* Light grey background color */
+    color: #333; /* Dark text color */
+    border: 1px solid #ccc; /* Grey border */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+#call_back_time::-webkit-calendar-picker-indicator {
+    filter: invert(100%); /* Change the color of the calendar icon inside #call_back_time to black */
+}
+
 
 #generateButton {
     background-color: #2195ba; /* Orange background color */
